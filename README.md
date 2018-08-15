@@ -1,12 +1,12 @@
-#VideoToStr
-共用库 9 个
-os
-sys
-pickle
-numpy
-invoke
-threading In thread
-cv2
-time
-curses
-使用前自己安装，注释写的个人觉得挺清楚的
+# 共用库 9 个,使用前自己安装  
+Python版本3.6  
+
+os  
+sys  
+pickle  
+threading In thread  
+time  
+curses  
+cv2  
+invoke  
+numpy  
