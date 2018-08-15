@@ -57,8 +57,8 @@ def img_to_chars(img, i):
 			line += pixels[index] + " " # 增加字符间距
 		
 		res.append(line)
-	
-	i=str(round(i*100,2))+"%  "+"■"*int(i*width*2)
+	res.append()
+	i=str(round(i*100,2))+"%  "+"■"*int(i*width*2)  #打印输出进度条
 	res.append(i)
 	return res
 
@@ -157,6 +157,10 @@ def main(video_path):
 	
 	
 if __name__ == "__main__":
-	# video_path = sys.argv[1]
-	video_path = "BadApple.mp4"  # 视频地址
+	try:
+		video_path = sys.argv[1]
+	except:
+		video_path = ""
+	if Video_path = "":
+		video_path = input("输入视频地址:")
 	main(video_path)
