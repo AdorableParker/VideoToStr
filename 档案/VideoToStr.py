@@ -57,7 +57,7 @@ def img_to_chars(img, i):
 			line += pixels[index] + " " # 增加字符间距
 		
 		res.append(line)
-	res.append()
+	res.append("")
 	i=str(round(i*100,2))+"%  "+"■"*int(i*width*2)  #打印输出进度条
 	res.append(i)
 	return res
@@ -144,7 +144,7 @@ def play_audio(video_path):
 def main(video_path):
 	size = (80,45)  # 输出分辨率  建议是100*100以内，和原视频宽高比相同
 	# video_path = "BadApple.mp4"
-	seconds = 30
+	seconds = 30  #视频播放时长
 	video_chars, fps, frames_count = get_video_chars(video_path, size, seconds)
 	input("开始播放")
 	p = play_audio(video_path)
@@ -159,8 +159,11 @@ def main(video_path):
 if __name__ == "__main__":
 	try:
 		video_path = sys.argv[1]
+
 	except:
 		video_path = ""
-	if Video_path = "":
+
+	if video_path == "":
 		video_path = input("输入视频地址:")
 	main(video_path)
+	exit()

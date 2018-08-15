@@ -10,3 +10,8 @@ curses
 cv2  
 invoke  
 numpy  
+# 另外  
+  
+音频播放这里是调用的外部播放器 mpv  
+请自行下载或者解决  
+mpv播放器下载地址：https://mpv.io/
